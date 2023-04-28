@@ -1,0 +1,9 @@
+.boardContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.boardContainer .boardDiv {
+  padding: 50px;
+  background-color: aquamarine;
+}
