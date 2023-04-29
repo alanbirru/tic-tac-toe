@@ -1,9 +1,38 @@
 .boardContainer {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(118, 232, 255);
+  border-radius: 30px;
 }
 
-.boardContainer .boardDiv {
-  padding: 50px;
-  background-color: aquamarine;
+.boardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+  margin: 10px;
+  background-color: rgb(255, 111, 0);
+  border-radius: 10px;
+  color: white;
 }
+
+/* .boardDiv:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.boardDiv:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.boardDiv:nth-child(-n + 3) {
+  border-top: none;
+}
+
+.boardDiv:nth-child(n + 7) {
+  border-bottom: none;
+} */
